@@ -24,7 +24,7 @@ const HeroSection = () => {
       </div>
       <div className='justify-between items-center relative z-20 flex flex-col md:flex-row'>
         <div className="lg:max-w-[691px] md:max-w-[562px] text-center md:text-left">
-          <h1 className="text-4xl leading-tight sm:text-5xl md:text-5xl font-bold sm:leading-normal md:leading-snug lg:leading-20">
+          <h1 className="text-4xl leading-tight sm:text-5xl md:text-5xl lg:text-6xl font-bold sm:leading-normal md:leading-snug lg:leading-20">
             Get More Done with whitepace
           </h1>
           <p className="mt-5 leading-7 text-[17px] md:ml-1">
@@ -44,7 +44,7 @@ const HeroSection = () => {
           <img
             src="/white-space.png"
             alt="Whitepace"
-            className="w-full sm:w-[500px] sm:h-[267px] md:w-[550px] md:h-[367px] lg:w-[685px] lg:h-[500px] object-cover"
+            className="w-full sm:w-[500px] sm:h-[267px] md:w-[550px] md:h-[367px] lg:w-[685px] lg:h-[456px] object-cover"
           />
         </div>
       </div>
