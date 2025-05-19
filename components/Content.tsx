@@ -12,13 +12,15 @@ const Content = () => {
         height: 200
       }}
       title="Project Management"
+      titleBoxClassName="lg:max-w-[600px] md:max-w-[562px]"
       description="Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note."
       buttonText="Get Started"
       buttonIcon={<ArrowRight />}
       buttonClassName="bg-primary-light text-white mt-12 p-5"
       image={{
         src: "/space-2.png",
-        alt: "Whitepace"
+        alt: "Whitepace",
+        className: 'w-full sm:w-[500px] sm:h-[267px] md:w-[550px] md:h-[367px] lg:w-[720px] lg:h-[456px] object-cover'
       }}
       className="bg-white text-black"
     >
