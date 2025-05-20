@@ -9,10 +9,12 @@ const Content = () => {
       backgroundImage={{
         desktop: "/background.png",
         width: 200,
-        height: 200
+        height: 200,
+        className: 'absolute top-0 left-0'
       }}
       title="Project Management"
-      titleBoxClassName="lg:max-w-[600px] md:max-w-[562px]"
+      titleBoxClassName="lg:max-w-[562px] md:max-w-[540px]"
+      titleHighlight={true}
       description="Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note."
       buttonText="Get Started"
       buttonIcon={<ArrowRight />}
