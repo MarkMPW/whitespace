@@ -12,7 +12,8 @@ const HeroSection = () => {
         width: 3000,
         height: 1000,
         mobileWidth: 1500,
-        mobileHeight: 800
+        mobileHeight: 800,
+        className: 'md:top-24 md:left-0 z-0 -left-12'
       }}
       title="Get More Done with whitepace"
       description="Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks"

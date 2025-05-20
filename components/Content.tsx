@@ -10,7 +10,7 @@ const Content = () => {
         desktop: "/background.png",
         width: 200,
         height: 200,
-        className: 'absolute top-0 left-0'
+        className: 'top-0 left-0'
       }}
       title="Project Management"
       titleBoxClassName="lg:max-w-[562px] md:max-w-[540px]"
