@@ -1,6 +1,7 @@
 import Content from "@/components/Content";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import WorkManagement from "@/components/WorkManagement";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <Content />
+      <WorkManagement />
     </section>
   );
 }
