@@ -15,8 +15,11 @@ interface SectionLayoutProps {
   title: string;
   titleBoxClassName?: string;
   titleHighlight?: boolean;
+  titleHighlightClassName?: string;
+  ventorClassName?: string;
+  ventorMdClassName?: string;
   description: string;
-  buttonText: string;
+  buttonText?: string;
   buttonIcon?: React.ReactNode;
   buttonClassName?: string;
   image: {
@@ -33,6 +36,9 @@ const SectionLayout = ({
   title,
   titleBoxClassName,
   titleHighlight,
+  titleHighlightClassName,
+  ventorClassName,
+  ventorMdClassName,
   description,
   buttonText,
   buttonIcon,
@@ -72,22 +78,33 @@ const SectionLayout = ({
           )}
         >
           <h1 className="text-4xl leading-tight sm:text-5xl md:text-6xl lg:text-6xl font-bold sm:leading-normal md:leading-snug lg:leading-20 relative">
-            <p className='relative z-10'>{title}</p>
+            <p className="relative z-10">{title}</p>
             {titleHighlight && (
-              <div className="absolute z-0 -bottom-2 right-10 sm:right-20 sm:-bottom-1 md:right-40">
+              <div
+                className={cn(
+                  "absolute z-0 -bottom-2 right-10 sm:right-20 sm:-bottom-1 md:right-40",
+                  titleHighlightClassName
+                )}
+              >
                 <Image
                   src="/vertor.png"
                   alt="ventor"
                   width={450}
                   height={500}
-                  className="block lg:block sm:block md:hidden w-[250px] sm:w-[350px] lg:w-[450px]"
+                  className={cn(
+                    "block lg:block sm:block md:hidden w-[250px] sm:w-[350px] lg:w-[450px]",
+                    ventorClassName
+                  )}
                 />
                 <Image
                   src="/vertor-md.png"
                   alt="ventor md"
                   width={200}
                   height={200}
-                  className="hidden lg:hidden sm:hidden md:block"
+                  className={cn(
+                    "hidden lg:hidden sm:hidden md:block",
+                    ventorMdClassName
+                  )}
                 />
               </div>
             )}
