@@ -3,6 +3,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 interface SectionLayoutProps {
+  reverse?: string;
   backgroundImage?: {
     desktop: string;
     mobile?: string;
@@ -32,6 +33,7 @@ interface SectionLayoutProps {
 }
 
 const SectionLayout = ({
+  reverse,
   backgroundImage,
   title,
   titleBoxClassName,
@@ -70,7 +72,12 @@ const SectionLayout = ({
         </div>
       )}
 
-      <div className="justify-between items-center relative z-10 flex flex-col md:flex-row">
+      <div
+        className={cn(
+          "justify-between items-center relative z-10 flex flex-col md:flex-row",
+          reverse
+        )}
+      >
         <div
           className={cn(
             "lg:max-w-[691px] md:max-w-[562px] text-center md:text-left relative",
@@ -120,10 +127,10 @@ const SectionLayout = ({
           <img
             src={image.src}
             alt={image.alt}
-            className={
-              image.className ??
-              "w-full sm:w-[500px] sm:h-[267px] md:w-[550px] md:h-[367px] lg:w-[685px] lg:h-[456px] object-cover"
-            }
+            className={cn(
+              "w-full sm:w-[500px] sm:h-[267px] md:w-[550px] md:h-[367px] lg:w-[685px] lg:h-[456px] object-cover",
+              image.className
+            )}
           />
         </div>
       </div>
