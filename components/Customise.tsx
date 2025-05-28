@@ -15,7 +15,7 @@ const Customise = () => {
         className: 'mb-10 py-0'
       }}
       reverse="flex md:flex-row-reverse sm:flex-col-reverse"
-      titleBoxClassName="lg:max-w-[490px] md:max-w-[562px]"
+      titleBoxClassName="lg:max-w-[490px] md:max-w-[700px]"
     >
       <Button size="xl" className="bg-primary-light text-white mt-12 p-5">
         Let’s Go <ArrowRight />
