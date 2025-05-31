@@ -1,4 +1,6 @@
-export const PRICING_TICKERS = [
+import { PricingTicker } from "@/interface/pricingTicker";
+
+export const PRICING_TICKERS: PricingTicker[] = [
   {
     title: "Free",
     description: "Get started with the basics of Evernote.",

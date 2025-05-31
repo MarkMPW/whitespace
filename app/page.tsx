@@ -3,6 +3,7 @@ import Customise from "@/components/Customise";
 import Extension from "@/components/Extension";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import Pricing from "@/components/Pricing";
 import WorkManagement from "@/components/WorkManagement";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <WorkManagement />
       <Extension />
       <Customise />
+      <Pricing />
     </section>
   );
 }
