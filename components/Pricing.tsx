@@ -13,18 +13,21 @@ const Pricing = () => {
         </p>
       </div>
 
-      <div className="py-8 px-2 mt-10 flex gap-6 justify-center items-center min-h-[800px]">
-        {PRICING_TICKERS.map((item: PricingTicker) => (
-          <PricePlan
-            key={item.title}
-            title={item.title}
-            description={item.description}
-            price={item.price}
-            buttonText={item.buttonText}
-            features={item.features}
-            popular={item.popular}
-          />
-        ))}
+      <div className="sm:flex sm:flex-row sm:overflow-y-auto md:overflow-y-hidden">
+        <div className="py-8 px-2 mt-10 flex gap-6 justify-center items-center min-h-[800px]">
+          {PRICING_TICKERS.map((item: PricingTicker) => (
+            <div key={item.title} className='sm:w-[480px] md:w-auto'>
+              <PricePlan
+                title={item.title}
+                description={item.description}
+                price={item.price}
+                buttonText={item.buttonText}
+                features={item.features}
+                popular={item.popular}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

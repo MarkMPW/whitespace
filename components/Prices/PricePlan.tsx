@@ -11,7 +11,7 @@ const PricePlan = (props: PricingTicker) => {
   return (
     <div
       className={cn(
-        "p-10 w-[430px] border border-[#FFE492] rounded-lg",
+        "p-10 border border-[#FFE492] rounded-lg",
          popular
       ? "bg-primary text-white min-h-[750px] flex flex-col justify-center"
       : "h-auto"
