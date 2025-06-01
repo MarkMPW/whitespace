@@ -20,9 +20,6 @@ interface SectionLayoutProps {
   ventorClassName?: string;
   ventorMdClassName?: string;
   description: string;
-  buttonText?: string;
-  buttonIcon?: React.ReactNode;
-  buttonClassName?: string;
   image: {
     src: string;
     alt: string;
@@ -42,15 +39,12 @@ const SectionLayout = ({
   ventorClassName,
   ventorMdClassName,
   description,
-  buttonText,
-  buttonIcon,
-  buttonClassName,
   image,
   className = "",
   children,
 }: SectionLayoutProps) => {
   return (
-    <div className={`py-20 md:px-8 relative px-3 overflow-hidden ${className}`}>
+    <div className={`sm:py-0 md:py-20 md:px-8 relative px-3 overflow-hidden ${className}`}>
       {backgroundImage && (
         <div className={cn("absolute z-0", backgroundImage.className)}>
           <Image
@@ -128,7 +122,7 @@ const SectionLayout = ({
             src={image.src}
             alt={image.alt}
             className={cn(
-              "w-full sm:w-[500px] sm:h-[267px] md:w-[550px] md:h-[367px] lg:w-[685px] lg:h-[456px] object-cover",
+              "w-full sm:w-[500px] sm:h-[267px] md:w-[550px] md:h-[367px] lg:w-[685px] lg:h-[456px] object-contain",
               image.className
             )}
           />
