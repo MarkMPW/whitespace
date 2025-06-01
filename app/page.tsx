@@ -1,6 +1,7 @@
 import BarLayout from "@/components/BarLayout";
 import Content from "@/components/Content";
 import Customise from "@/components/Customise";
+import DataSection from "@/components/DataSection";
 import Extension from "@/components/Extension";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
@@ -18,6 +19,7 @@ export default function Home() {
       <Customise />
       <Pricing />
       <BarLayout />
+      <DataSection />
     </section>
   );
 }

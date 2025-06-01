@@ -4,7 +4,7 @@ import PricePlan from "./Prices/PricePlan";
 
 const Pricing = () => {
   return (
-    <section className="">
+    <section className="sm:py-10 md:py-0 md:px-8 px-3">
       <div className="text-center">
         <h1 className="text-6xl font-bold">Choose Your Plan</h1>
         <p className="max-w-[900px] mx-auto mt-5">
