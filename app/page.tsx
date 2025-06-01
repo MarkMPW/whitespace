@@ -1,3 +1,4 @@
+import BarLayout from "@/components/BarLayout";
 import Content from "@/components/Content";
 import Customise from "@/components/Customise";
 import Extension from "@/components/Extension";
@@ -16,6 +17,7 @@ export default function Home() {
       <Extension />
       <Customise />
       <Pricing />
+      <BarLayout />
     </section>
   );
 }
