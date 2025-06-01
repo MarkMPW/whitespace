@@ -6,8 +6,8 @@ import HighlightBlue from "@/public/highlight-blue.png";
 
 const BarLayout = () => {
   return (
-    <section className="relative bg-primary text-white px-6 sm:px-10 md:px-20 py-24 flex flex-col items-center">
-      <div className="absolute -top-36 left-0">
+    <section className="relative bg-primary text-white px-6 sm:px-5 lg:px-20 py-24 flex flex-col items-start lg:items-center">
+      <div className="absolute -top-36 left-0 hidden sm:hidden md:block lg:block">
         <Image
           src={SidebarElement}
           width={200}
@@ -16,16 +16,15 @@ const BarLayout = () => {
           className="opacity-[0.5]"
         />
       </div>
-      <div className="text-center max-w-5xl w-full">
+      <div className="text-start lg:text-center max-w-[650px] sm:max-w-[600px] lg:max-w-5xl w-full">
         <h1 className="relative text-4xl sm:text-5xl md:text-6xl font-bold leading-tight z-10">
           Your work, everywhere you are
-          <div className="absolute right-0 bottom-0 -z-10">
+          <div className="absolute md:right-0 lg:bottom-0 -z-10 sm:bottom-0">
             <Image
               src={HighlightBlue}
               width={300}
               height={300}
               alt="Highlight blue"
-              // className="opacity-[0.5]"
             />
           </div>
         </h1>
