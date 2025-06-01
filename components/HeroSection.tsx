@@ -17,9 +17,6 @@ const HeroSection = () => {
       }}
       title="Get More Done with whitepace"
       description="Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks"
-      buttonText="Try Whitepace free"
-      buttonIcon={<ArrowRight />}
-      buttonClassName="bg-primary-light text-white mt-12 p-8"
       image={{
         src: "/white-space.png",
         alt: "Whitepace"

@@ -12,7 +12,7 @@ const Customise = () => {
       image={{
         src: 'space-4.png',
         alt: 'space 3',
-        className: 'mb-10 py-0'
+        className: 'mb-10 py-0 object-cover object-bottom'
       }}
       reverse="flex md:flex-row-reverse sm:flex-col-reverse"
       titleBoxClassName="lg:max-w-[490px] md:max-w-[700px]"
