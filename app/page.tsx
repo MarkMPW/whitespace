@@ -6,6 +6,7 @@ import Extension from "@/components/Extension";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
+import Sponsors from "@/components/Sponsors";
 import WorkManagement from "@/components/WorkManagement";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Pricing />
       <BarLayout />
       <DataSection />
+      <Sponsors />
     </section>
   );
 }

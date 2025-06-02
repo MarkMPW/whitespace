@@ -44,7 +44,7 @@ const SectionLayout = ({
   children,
 }: SectionLayoutProps) => {
   return (
-    <div className={`sm:py-2 md:py-20 md:px-8 relative px-3 overflow-hidden ${className}`}>
+    <div className={`sm:py-10 md:py-20 md:px-8 relative px-3 overflow-hidden ${className}`}>
       {backgroundImage && (
         <div className={cn("absolute z-0", backgroundImage.className)}>
           <Image
