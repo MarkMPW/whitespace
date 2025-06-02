@@ -1,4 +1,5 @@
 import BarLayout from "@/components/BarLayout";
+import ClientSection from "@/components/ClientSection";
 import Content from "@/components/Content";
 import Customise from "@/components/Customise";
 import DataSection from "@/components/DataSection";
@@ -24,6 +25,7 @@ export default function Home() {
       <DataSection />
       <Sponsors />
       <FavoriteAppSection />
+      <ClientSection />
     </section>
   );
 }
