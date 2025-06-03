@@ -2,20 +2,26 @@ import Image from "next/image";
 import React from "react";
 import WhiltespaceLogo from "../../public/logos/Logo.png";
 import { Button } from "../ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowDown } from "lucide-react";
+import GLobalLogo from "../../public/Global-white.png";
+import FacebookLogo from "../../public/icons/Facebook.png";
+import TwitterLogo from "../../public/icons/Twitter.png";
+import LinkedinebookLogo from "../../public/icons/Linkedin.png";
 
 const Footer = () => {
   return (
-    <footer className="">
-      <div className="max-w-7xl mx-auto md:px-6 px-2">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-16 gap-y-16 pt-30 pb-25">
+    <footer className='md:px-6 px-2'>
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-16 gap-y-16 pt-30 pb-12">
           <div className="col-span-3 flex flex-col gap-5">
-            <Image src={WhiltespaceLogo} alt="whitepace" className='md:w-[200px] sm:w-[300px] h-auto'/>
+            <Image
+              src={WhiltespaceLogo}
+              alt="whitepace"
+              className="md:w-[200px] sm:w-[300px] h-auto"
+            />
             <p className="leading-7 w-full sm:w-[85%]">
-              whitepace was created for 
-              the new ways we live and 
-              work. We make a better 
-              workspace around the world
+              whitepace was created for the new ways we live and work. We make a
+              better workspace around the world
             </p>
           </div>
 
@@ -56,6 +62,36 @@ const Footer = () => {
               Start today <ArrowRight />
             </Button>
           </div>
+        </div>
+        <span className="w-full h-2 border-b-1 border-slate-500 inline-block opacity-[0.5]"/>
+      </div>
+      <div className="flex md:flex-row sm:flex-col justify-between py-5">
+        <div>
+          <ul className='flex flex-col md:flex-row items-center gap-6 md:gap-16'>
+            <li className='flex items-center gap-2'>
+              <Image src={GLobalLogo} alt="Global Logo White" width={24} height={24}/>
+              Endlish
+              <ArrowDown width={24} height={24}/>
+            </li>
+            <li>Terms & privacy</li>
+            <li>Security</li>
+            <li>Status</li>
+            <li>©2021 Whitepace LLC.</li>
+          </ul>
+        </div>
+
+        <div className='mt-5 md:mt-0'>
+          <ul className='flex gap-5 items-center'>
+            <li>
+              <Image src={FacebookLogo} alt="Facebook logo" />
+            </li>
+            <li>
+              <Image src={TwitterLogo} alt="Facebook logo" />
+            </li>
+            <li>
+              <Image src={LinkedinebookLogo} alt="Facebook logo" />
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
