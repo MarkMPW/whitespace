@@ -5,6 +5,7 @@ import Customise from "@/components/Customise";
 import DataSection from "@/components/DataSection";
 import Extension from "@/components/Extension";
 import FavoriteAppSection from "@/components/FavoriteAppSection";
+import FooterSection from "@/components/FooterSection";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
@@ -26,6 +27,7 @@ export default function Home() {
       <Sponsors />
       <FavoriteAppSection />
       <ClientSection />
+      <FooterSection />
     </section>
   );
 }
