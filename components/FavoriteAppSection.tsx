@@ -20,6 +20,7 @@ const FavoriteAppSection = () => {
       image={{
         src: "/Apps.png",
         alt: "App",
+        className: "lg:w-[500px]"
       }}
       className="bg-primary text-white min-h-screen"
     >
