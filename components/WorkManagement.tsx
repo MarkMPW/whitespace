@@ -6,30 +6,30 @@ import Image from "next/image";
 const WorkManagement = () => {
   return (
     <div className="md:p-8 md:pt-0 px-3 h-screen">
-      <div className='container'>
+      <div className="container">
         <div className="flex flex-col-reverse md:flex-row  justify-between items-center w-full">
-
           {/* Circle element */}
           <div className="relative flex items-center justify-center w-full lg:max-w-[583px] md:h-[583px] md:max-w-[491px] sm:max-w-[279px] h-[260px] mt-16">
-            
             {/* out side cirlce */}
             <div className="absolute border-2 border-dashed rounded-full lg:size-[460px] md:size-[370px] size-[279px] -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
-              <div className="absolute lg:size-[370px] md:size-[300px] size-[235px] rotate-0 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+              <div
+                className="absolute lg:size-[370px] md:size-[300px] size-[235px] rotate-0 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 animate-spin [animation-duration:16s]"
+              >
                 <div className="absolute bg-[#FFDC4D] size-10 md:size-12 rounded-full"></div>
               </div>
-              <div className="absolute lg:size-[370px] md:size-[300px] size-[235px] rotate-80 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+              <div className="absolute lg:size-[370px] md:size-[300px] size-[235px] rotate-80 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 animate-spin [animation-duration:16s]">
                 <div className="absolute bg-[#37A3FF] size-10 md:size-12 rounded-full"></div>
               </div>
-              <div className="absolute lg:size-[370px] md:size-[300px] size-[235px] rotate-150 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+              <div className="absolute lg:size-[370px] md:size-[300px] size-[235px] rotate-150 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 animate-spin [animation-duration:16s]">
                 <div className="absolute bg-[#00CA75] size-10 md:size-12 rounded-full"></div>
               </div>
-              <div className="absolute lg:size-[370px] md:size-[300px] size-[235px] rotate-255 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+              <div className="absolute lg:size-[370px] md:size-[300px] size-[235px] rotate-255 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 animate-spin [animation-duration:18s]">
                 <div className="absolute bg-[#37A3FF] size-10 md:size-12 rounded-full"></div>
               </div>
             </div>
 
             {/* inside cirlce */}
-            <div className="absolute border-2 border-dashed rounded-full lg:size-[300px] md:size-[255px] size-[189px] -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+            <div className="absolute border-2 border-dashed rounded-full lg:size-[300px] md:size-[255px] size-[189px] -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 animate-spin [animation-duration:18s]">
               <div className="absolute lg:size-[255px] md:size-[220px] size-[170px] rotate-45 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
                 <div className="absolute bg-[#00CA75] size-10 md:size-12 rounded-full"></div>
               </div>
@@ -72,14 +72,14 @@ const WorkManagement = () => {
                   alt="ventor md"
                   width={200}
                   height={200}
-                  className="hidden lg:hidden sm:block md:block" 
+                  className="hidden lg:hidden sm:block md:block"
                 />
               </div>
             </div>
             <p className="text-lg mb-6">
               With whitepace, share your notes with your colleagues and
-              collaborate on them. You can also publish a note to the internet and
-              share the URL with others.
+              collaborate on them. You can also publish a note to the internet
+              and share the URL with others.
             </p>
             <Button size="xl" className="bg-primary-light text-white py-7">
               Try it now <ArrowRight className="ml-2" />
