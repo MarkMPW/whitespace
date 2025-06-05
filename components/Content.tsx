@@ -16,9 +16,6 @@ const Content = () => {
       titleBoxClassName="lg:max-w-[562px] md:max-w-[540px]"
       titleHighlight={true}
       description="Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note."
-      buttonText="Get Started"
-      buttonIcon={<ArrowRight />}
-      buttonClassName="bg-primary-light text-white mt-12 p-5"
       image={{
         src: "/space-2.png",
         alt: "Whitepace",

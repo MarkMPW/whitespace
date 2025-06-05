@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { ArrowRight, Menu } from "lucide-react";
 import { Button } from "./ui/button";
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -14,16 +15,16 @@ const Navbar = () => {
             <nav className="hidden lg:flex">
               <ul className="flex gap-10">
                 <li>
-                  <a href="/">Products</a>
+                  <Link href="/">Products</Link>
                 </li>
                 <li>
-                  <a href="/about">Solutions</a>
+                  <Link href="/about">Solutions</Link>
                 </li>
                 <li>
-                  <a href="/services">Resources</a>
+                  <Link href="/services">Resources</Link>
                 </li>
                 <li>
-                  <a href="/contact">Pricing</a>
+                  <Link href="/contact">Pricing</Link>
                 </li>
               </ul>
             </nav>
