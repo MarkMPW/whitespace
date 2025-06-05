@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="bg-primary py-4 px-8 text-white w-full">
       <div className='container'>
         <div className="flex items-center justify-between">
-          <Image src="/logos/logo.png" alt="Logo" width={190} height={67} />
+          <Image src="/logos/Logo.png" alt="Logo" width={190} height={67} />
 
           <div className="flex items-center gap-20">
             <nav className="hidden lg:flex">
