@@ -2,28 +2,29 @@ import React from "react";
 import Image from "next/image";
 import { ArrowRight, Menu } from "lucide-react";
 import { Button } from "./ui/button";
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
     <div className="bg-primary py-4 px-8 text-white w-full">
       <div className='container'>
         <div className="flex items-center justify-between">
-          <Image src="/logos/logo.png" alt="Logo" width={190} height={67} />
+          <Image src="/logos/Logo.png" alt="Logo" width={190} height={67} />
 
           <div className="flex items-center gap-20">
             <nav className="hidden lg:flex">
               <ul className="flex gap-10">
                 <li>
-                  <a href="/">Products</a>
+                  <Link href="/">Products</Link>
                 </li>
                 <li>
-                  <a href="/about">Solutions</a>
+                  <Link href="/about">Solutions</Link>
                 </li>
                 <li>
-                  <a href="/services">Resources</a>
+                  <Link href="/services">Resources</Link>
                 </li>
                 <li>
-                  <a href="/contact">Pricing</a>
+                  <Link href="/contact">Pricing</Link>
                 </li>
               </ul>
             </nav>
